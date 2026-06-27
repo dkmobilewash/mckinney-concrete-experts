@@ -1,0 +1,27 @@
+/** @type {import('next-sitemap').IConfig} */
+module.exports = {
+  siteUrl: "https://mckinneyconcreteexperts.com",
+  generateRobotsTxt: true,
+  changefreq: "monthly",
+  priority: 0.7,
+  additionalPaths: async () => [
+    { loc: "/", priority: 1.0, changefreq: "weekly" },
+    { loc: "/services", priority: 0.9 },
+    { loc: "/services/driveways", priority: 0.9 },
+    { loc: "/services/patios", priority: 0.9 },
+    { loc: "/services/pool-decks", priority: 0.9 },
+    { loc: "/services/block-walls", priority: 0.9 },
+    { loc: "/services/foundations-slabs", priority: 0.9 },
+    { loc: "/services/commercial-concrete", priority: 0.9 },
+    { loc: "/gallery", priority: 0.8 },
+    { loc: "/contact", priority: 0.9 },
+    { loc: "/service-areas/stonebridge-ranch", priority: 0.8 },
+    { loc: "/service-areas/craig-ranch", priority: 0.8 },
+    { loc: "/service-areas/trinity-falls", priority: 0.8 },
+    { loc: "/service-areas/tucker-hill", priority: 0.8 },
+    { loc: "/service-areas/allen", priority: 0.8 },
+    { loc: "/service-areas/fairview", priority: 0.8 },
+    { loc: "/service-areas/celina", priority: 0.8 },
+    { loc: "/service-areas/anna", priority: 0.8 },
+  ],
+};

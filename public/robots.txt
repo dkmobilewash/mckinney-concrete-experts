@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mckinneyconcreteexperts.com
+
+# Sitemaps
+Sitemap: https://mckinneyconcreteexperts.com/sitemap.xml

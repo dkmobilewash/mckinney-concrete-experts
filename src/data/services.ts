@@ -1,0 +1,467 @@
+import { ServiceData } from "@/types";
+
+export const services: ServiceData[] = [
+  {
+    slug: "driveways",
+    name: "Driveways",
+    metaTitle: "Concrete Driveways in McKinney TX | McKinney Concrete Experts",
+    metaDescription:
+      "Expert concrete driveway installation and replacement in McKinney, TX. Broom finish, stamped, and exposed aggregate. Rebar-reinforced for North Texas clay soil. Free estimates.",
+    heroImage: "https://picsum.photos/seed/driveways/1600/900",
+    heroSubtitle:
+      "Durable, code-compliant concrete driveways built for McKinney's climate and soil conditions.",
+    intro: [
+      "In McKinney — where communities like Stonebridge Ranch have maintained high curb appeal standards since the 1990s and newer neighborhoods like Trinity Falls and Craig Ranch are setting new benchmarks — a concrete driveway is one of the most visible investments a homeowner makes. North Texas clay soil and temperature swings from 100°F summers to occasional hard freezes mean driveways need to be poured correctly the first time: proper thickness (4 inches minimum for passenger vehicles, 5 inches if you park anything heavier), steel reinforcement, correctly placed control joints, and a quality penetrating sealer.",
+      "We specialize in broom finish, exposed aggregate, and stamped concrete approaches that meet McKinney's aesthetic expectations and hold up through a Texas year. Whether you're replacing a 20-year-old driveway in an established neighborhood or pouring the first one on a new build, we bring the same attention to grade, drainage, and finish quality.",
+    ],
+    benefits: [
+      "Curb appeal that holds up in demanding HOA communities",
+      "Min 4\" thickness, rebar-reinforced for North Texas conditions",
+      "Custom finishes: broom, exposed aggregate, stamped patterns",
+      "Penetrating sealer resists UV and freeze-thaw cycles",
+      "Faster installation than pavers — most jobs done in 1–2 days",
+      "Low long-term maintenance vs. asphalt or pavers",
+    ],
+    processSteps: [
+      {
+        title: "Site Visit & Grade Evaluation",
+        description:
+          "We assess the existing surface, soil conditions, drainage patterns, and measure the full scope of work.",
+      },
+      {
+        title: "Form Layout & Base Preparation",
+        description:
+          "Proper forming and compacted base ensure the finished driveway drains correctly and sits on a stable foundation.",
+      },
+      {
+        title: "Rebar & Wire Mesh Placement",
+        description:
+          "Steel reinforcement is placed on chairs at the correct height to provide structural integrity against soil movement.",
+      },
+      {
+        title: "Concrete Pour & Finish",
+        description:
+          "We pour, screed, and apply your chosen finish — broom, exposed aggregate, or stamped pattern — while the concrete is workable.",
+      },
+      {
+        title: "Cure Period & Sealer Application",
+        description:
+          "After proper curing time, we apply a penetrating sealer that protects against UV damage and freeze-thaw cycles.",
+      },
+    ],
+    faq: [
+      {
+        question: "How long does a driveway take from start to finish?",
+        answer:
+          "Most residential driveways take 1–2 days to pour and finish, followed by a 7-day cure period before regular vehicle use. The full process from site visit to completion typically runs 2–3 weeks including scheduling.",
+      },
+      {
+        question:
+          "What's the right concrete thickness for McKinney's clay soil?",
+        answer:
+          "We recommend a minimum of 4 inches for standard passenger vehicles and 5 inches if you regularly park trucks, trailers, or heavier equipment. Collin County's expansive clay makes proper thickness and reinforcement essential.",
+      },
+      {
+        question:
+          "Can I get a decorative finish that works with my home's exterior?",
+        answer:
+          "Absolutely. Stamped concrete can mimic brick, slate, flagstone, and other patterns. Exposed aggregate provides a natural stone look. We'll help you choose a finish and color that complements your home's architecture.",
+      },
+      {
+        question: "When can I park on new concrete?",
+        answer:
+          "Light foot traffic is fine after 24–48 hours. We recommend waiting at least 7 days before parking passenger vehicles and 14 days for heavier trucks or equipment.",
+      },
+    ],
+    relatedServices: ["patios", "foundations-slabs"],
+  },
+  {
+    slug: "patios",
+    name: "Patios",
+    metaTitle: "Concrete Patios in McKinney TX | McKinney Concrete Experts",
+    metaDescription:
+      "Custom concrete patios in McKinney, TX. Stamped, stained, and broom-finish options. Built for Texas outdoor living. Free estimates.",
+    heroImage: "https://picsum.photos/seed/patios/1600/900",
+    heroSubtitle:
+      "Custom patios built for McKinney's outdoor living season — stamped, stained, and built to last.",
+    intro: [
+      "Outdoor living in McKinney runs April through October — that's six months of real use your patio has to earn. Whether you're in a Stonebridge Ranch home with a mature backyard and a specific HOA aesthetic to meet, or a newer Craig Ranch property where the landscaping is still establishing itself, a concrete patio built right becomes the foundation of your outdoor space for decades. We work across the full range: simple broom-finish slabs for clean, low-maintenance outdoor dining areas, stamped concrete that mimics slate, limestone, or wood grain for more architectural outdoor rooms, and colored or acid-stained surfaces that hold up without fading.",
+      "Unlike wood decking or composite, concrete doesn't warp, rot, or require annual refinishing. A properly poured and sealed concrete patio in McKinney delivers decades of performance with minimal maintenance — periodic resealing every 2–3 years is all it takes to keep it looking sharp.",
+    ],
+    benefits: [
+      "Seamless surface — no joints for weeds, no shifting like paver sand",
+      "Stamped concrete mimics stone, slate, and wood at a fraction of the cost",
+      "Texas-tough — no warping, rotting, or splintering",
+      "Stain and color options that hold color through UV exposure",
+      "Custom shapes including curves, multiple levels, and built-in edges",
+      "Maintenance is simple: periodic resealing every 2–3 years",
+    ],
+    processSteps: [
+      {
+        title: "Design Consultation & Layout",
+        description:
+          "We discuss your vision, measure your space, and plan the patio shape, finish, and any features like built-in edges or level changes.",
+      },
+      {
+        title: "Excavation & Sub-Base Compaction",
+        description:
+          "Proper excavation and a compacted gravel base ensure long-term stability and proper drainage away from your home.",
+      },
+      {
+        title: "Form Setting",
+        description:
+          "Forms are set to the exact planned shape and grade, including any curves or custom edges.",
+      },
+      {
+        title: "Pour, Stamp or Finish",
+        description:
+          "Concrete is poured, leveled, and your chosen finish is applied — broom, stamp, or smooth — while it's still workable.",
+      },
+      {
+        title: "Cure & Seal",
+        description:
+          "After proper curing, a quality sealer is applied to protect the surface and enhance the color and finish.",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "What's the difference between stamped and plain concrete for a patio?",
+        answer:
+          "Plain broom-finish concrete is clean, durable, and the most affordable option. Stamped concrete adds texture and pattern — mimicking stone, slate, or wood — for a more decorative look at a moderate upcharge. Both last equally long when properly sealed.",
+      },
+      {
+        question:
+          "Can you work around my existing landscaping and beds?",
+        answer:
+          "Yes. We regularly work around established trees, planting beds, irrigation lines, and other landscape features. We'll plan the layout to protect what you want to keep.",
+      },
+      {
+        question: "How do I maintain a stamped patio over time?",
+        answer:
+          "Keep it clean with a garden hose or pressure washer on a low setting. Reseal every 2–3 years to maintain color and protect against UV and moisture. That's it — no staining, sanding, or replacing boards.",
+      },
+      {
+        question:
+          "How does concrete compare to pavers for a McKinney backyard?",
+        answer:
+          "Concrete is typically more affordable, installs faster, and creates a seamless surface with no joints for weeds or shifting sand. Pavers offer easy individual replacement but require more maintenance over time. For most McKinney backyards, concrete is the practical choice.",
+      },
+    ],
+    relatedServices: ["pool-decks", "driveways"],
+  },
+  {
+    slug: "pool-decks",
+    name: "Pool Decks",
+    metaTitle: "Concrete Pool Decks in McKinney TX | McKinney Concrete Experts",
+    metaDescription:
+      "Pool deck installation and resurfacing in McKinney, TX. Cool deck coatings, slip-resistant finishes, and UV-resistant sealers. Free estimates.",
+    heroImage: "https://picsum.photos/seed/pooldecks/1600/900",
+    heroSubtitle:
+      "Slip-resistant, cool-to-the-touch pool decks designed for McKinney's long pool season.",
+    intro: [
+      "McKinney's pool season is long — families in Stonebridge Ranch, Craig Ranch, and Trinity Falls use their pools from spring through fall — which means pool decks take serious sun, chemical exposure, and foot traffic. The right surface is about more than looks: it needs to stay cool enough barefoot at 3pm in July, be slip-resistant when wet, and resist the bleaching effects of chlorine splash and UV.",
+      "We pour and resurface pool decks with textures and coatings specifically engineered for the Texas pool environment. Cool deck coatings can reduce surface temperature by up to 30°F compared to standard gray concrete, making the difference between a deck that's usable and one that stays empty during the hottest months.",
+    ],
+    benefits: [
+      "Slip-resistant texture required by code and common sense",
+      "Cool deck coatings cut surface temps up to 30°F",
+      "UV- and chlorine-resistant sealers that hold color",
+      "No warping, splintering, or rot like wood decking",
+      "Resurfacing available for existing cracked or faded decks",
+      "Custom shapes, seamless curves, and integrated steps",
+    ],
+    processSteps: [
+      {
+        title: "Assessment & Planning",
+        description:
+          "We evaluate the existing surface (or plan the new layout), discuss finish options, and determine whether a full pour or resurfacing is the best approach.",
+      },
+      {
+        title: "Surface Removal (If Resurfacing)",
+        description:
+          "Old, damaged surfaces are removed or prepped to create a clean bonding surface for the new coating or overlay.",
+      },
+      {
+        title: "Deck Prep & Forming",
+        description:
+          "Forms are set for new pours, or the existing surface is prepped, cleaned, and primed for coating application.",
+      },
+      {
+        title: "Pour or Coating Application",
+        description:
+          "New concrete is poured and finished, or cool deck coating is applied in multiple layers for durability and coverage.",
+      },
+      {
+        title: "Texture, Detail & Seal",
+        description:
+          "Slip-resistant texture is applied, edges and details are finished, and the surface is sealed for UV and chemical protection.",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "What is a cool deck coating and do I need it in McKinney?",
+        answer:
+          "A cool deck coating is a textured acrylic overlay that reflects heat and can reduce surface temperature by up to 30°F. In McKinney's summers, it's the difference between a usable pool deck and one that's too hot to walk on barefoot.",
+      },
+      {
+        question:
+          "Can you resurface my existing concrete pool deck without a full tear-out?",
+        answer:
+          "In most cases, yes. If the existing concrete is structurally sound without major heaving or settling, we can apply a resurfacing overlay or cool deck coating directly over it, saving time and cost.",
+      },
+      {
+        question:
+          "How long after the pour before we can use the pool area?",
+        answer:
+          "Light foot traffic is typically fine after 48–72 hours. Full use including furniture placement is recommended after 7 days. We'll give you specific guidance based on your project.",
+      },
+      {
+        question:
+          "What finishes look best around pools in North Texas?",
+        answer:
+          "Textured cool deck coatings in sandstone or desert tones are the most popular — they stay cool, resist fading, and complement most home exteriors. Stamped concrete with a non-slip texture is another popular option for a more natural stone look.",
+      },
+    ],
+    relatedServices: ["patios", "commercial-concrete"],
+  },
+  {
+    slug: "block-walls",
+    name: "Block Walls",
+    metaTitle:
+      "Concrete Block Walls in McKinney TX | McKinney Concrete Experts",
+    metaDescription:
+      "Retaining walls, privacy walls, and decorative block walls in McKinney, TX. Engineered footings, permit coordination, and quality construction. Free estimates.",
+    heroImage: "https://picsum.photos/seed/blockwalls/1600/900",
+    heroSubtitle:
+      "Retaining walls, privacy walls, and decorative block construction — engineered and permitted.",
+    intro: [
+      "McKinney's varied topography — particularly in older established neighborhoods and in newer communities graded for drainage — creates frequent need for retaining walls along property lines, between grade changes, and around raised planting beds. We build CMU (concrete masonry unit) block walls for three primary applications: retaining walls that hold soil against grade changes, privacy walls along property lines or around HVAC equipment, and decorative garden walls that define landscape zones.",
+      "Every structural retaining wall starts with proper footing design, engineered drainage behind the wall, and a permit where required by McKinney code. We handle the permit process, coordinate with inspectors, and build walls that meet both structural requirements and aesthetic expectations.",
+    ],
+    benefits: [
+      "Holds soil and prevents erosion on graded lots",
+      "Creates privacy between properties or around equipment",
+      "Decades of performance with minimal maintenance required",
+      "Fire-resistant, rot-proof, and termite-proof",
+      "Decorative cap options for a finished, architectural look",
+      "Engineering and permit coordination included for structural walls",
+    ],
+    processSteps: [
+      {
+        title: "Project Scope & Permit Evaluation",
+        description:
+          "We assess the site, determine structural requirements, and identify whether permits and engineering are required.",
+      },
+      {
+        title: "Footing Excavation & Pour",
+        description:
+          "A reinforced concrete footing is poured at the correct depth and width to support the wall height and soil load.",
+      },
+      {
+        title: "Block Laying Course by Course",
+        description:
+          "CMU blocks are laid, leveled, and filled with grout and rebar as required by the engineered design.",
+      },
+      {
+        title: "Cap Installation",
+        description:
+          "Decorative or standard caps are set to finish the top of the wall and protect the block cores from water.",
+      },
+      {
+        title: "Drainage Backfill & Grading",
+        description:
+          "Proper drainage material is placed behind retaining walls, and final grading ensures water flows away from the structure.",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "When does a retaining wall in McKinney require a permit?",
+        answer:
+          "Generally, retaining walls over 4 feet in height (measured from the bottom of the footing to the top of the wall) require a building permit and may need engineered plans. We handle the permit application process.",
+      },
+      {
+        question:
+          "How tall can a block wall be before it needs engineering?",
+        answer:
+          "Most municipalities, including McKinney, require engineering for retaining walls over 4 feet. Even shorter walls may need engineering if they support surcharges like driveways, vehicles, or structures above them.",
+      },
+      {
+        question:
+          "Can the wall be finished to look more decorative than standard CMU block?",
+        answer:
+          "Yes. Options include split-face block for a textured look, stucco or stone veneer over standard block, decorative caps, and integrated lighting. We'll help you choose a finish that fits your property.",
+      },
+      {
+        question: "What's a typical timeline for a block wall project?",
+        answer:
+          "Small garden walls can be completed in 2–3 days. Larger retaining walls requiring permits and engineering typically take 2–4 weeks from permit approval to completion, depending on size and complexity.",
+      },
+    ],
+    relatedServices: ["foundations-slabs", "commercial-concrete"],
+  },
+  {
+    slug: "foundations-slabs",
+    name: "Foundations & Slabs",
+    metaTitle:
+      "Concrete Foundations & Slabs in McKinney TX | McKinney Concrete Experts",
+    metaDescription:
+      "Engineered concrete foundations and slabs in McKinney, TX. Post-tension systems for Collin County clay soil. Garage floors, workshops, and more. Free estimates.",
+    heroImage: "https://picsum.photos/seed/foundations/1600/900",
+    heroSubtitle:
+      "Engineered foundations and standalone slabs built for Collin County's demanding soil conditions.",
+    intro: [
+      "Collin County's expansive black clay soil is one of the most challenging conditions in North Texas for concrete foundations and slabs. The soil swells with rain and shrinks during drought — sometimes moving several inches vertically across seasons — which is exactly why post-tension slab construction is the standard for residential foundations throughout McKinney.",
+      "We pour engineered foundations for new home construction, garages, workshops, and accessory structures. We also specialize in standalone slabs: garage floors built to handle parking and workshop loads, storage building pads, sport court slabs, and barn or equipment shed foundations on larger McKinney-area properties. Every pour is code-compliant, properly graded for drainage, and cured to spec.",
+    ],
+    benefits: [
+      "Engineered for Collin County's expansive clay soils",
+      "Post-tension cable systems standard for residential foundations",
+      "Proper drainage grade prevents moisture under the slab",
+      "Code-compliant — we pull all required McKinney permits",
+      "Standalone slabs for garages, workshops, sport courts, storage buildings",
+      "Experienced with McKinney's inspection processes",
+    ],
+    processSteps: [
+      {
+        title: "Soil Evaluation & Engineering Consult",
+        description:
+          "We coordinate soil testing and work with structural engineers to design the right foundation system for your specific site.",
+      },
+      {
+        title: "Excavation & Grade Beam Forming",
+        description:
+          "The site is excavated to engineered specifications, and forms are set for grade beams and the slab perimeter.",
+      },
+      {
+        title: "Rebar & Post-Tension Cable Installation",
+        description:
+          "Steel reinforcement and post-tension cables are placed according to the engineered plan, inspected before the pour.",
+      },
+      {
+        title: "Concrete Pour, Vibration & Finishing",
+        description:
+          "Concrete is placed, vibrated to eliminate voids, and finished to the specified surface — smooth for interior floors, broom for utility slabs.",
+      },
+      {
+        title: "Cure Period & Final Grade Check",
+        description:
+          "The slab cures under controlled conditions, post-tension cables are stressed, and final drainage grading is verified.",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "What is a post-tension slab and why is it necessary in McKinney?",
+        answer:
+          "A post-tension slab uses steel cables tensioned after the concrete cures, creating internal compression that resists cracking from soil movement. Collin County's expansive clay soil makes this the standard approach for residential foundations.",
+      },
+      {
+        question:
+          "How long does concrete need to cure before a garage slab can be used?",
+        answer:
+          "Light foot traffic after 24–48 hours. Vehicle parking after 7 days minimum. Heavy equipment or workshop use after 28 days, when the concrete reaches full design strength.",
+      },
+      {
+        question:
+          "What thickness is standard for a residential garage or workshop floor?",
+        answer:
+          "Standard residential garage slabs are 4 inches thick. Workshop or heavy-use slabs are typically 5–6 inches with additional reinforcement. We'll recommend the right thickness based on your planned use.",
+      },
+      {
+        question:
+          "Do you handle permit applications with the City of McKinney?",
+        answer:
+          "Yes. We handle the full permit process including application, plan submission, and coordination with inspectors for all required inspections throughout the project.",
+      },
+    ],
+    relatedServices: ["driveways", "commercial-concrete"],
+  },
+  {
+    slug: "commercial-concrete",
+    name: "Commercial Concrete",
+    metaTitle:
+      "Commercial Concrete in McKinney TX | McKinney Concrete Experts",
+    metaDescription:
+      "Commercial concrete services in McKinney, TX. Parking lots, ADA sidewalks, warehouse slabs, and flatwork. Bonded and insured. Free estimates.",
+    heroImage: "https://picsum.photos/seed/commercial/1600/900",
+    heroSubtitle:
+      "Parking lots, ADA-compliant flatwork, and commercial slabs — bonded, insured, and built to code.",
+    intro: [
+      "McKinney's commercial corridor — anchored by US-380, the Sam Rayburn Tollway, and Central Expressway — is one of the fastest-growing in Collin County. We serve commercial property owners, developers, and general contractors with parking lots, ADA-compliant sidewalks and ramps, warehouse and industrial slabs, dumpster pads, fire lanes, and concrete flatwork of all types.",
+      "Our crews are bonded, insured to commercial limits, and capable of large pours. We work with McKinney's development timeline — early morning pours, phased work on active properties, and weekend scheduling to minimize disruption to tenants and operations. All commercial work is code-compliant and permit-ready.",
+    ],
+    benefits: [
+      "ADA-compliant sidewalks, ramps, and parking field layouts",
+      "Heavy-duty slabs rated for commercial vehicle and forklift loads",
+      "Phased scheduling to minimize disruption at active businesses",
+      "Full commercial bonding and insurance",
+      "Experienced with City of McKinney commercial permitting",
+      "Large crew capacity for time-sensitive pours",
+    ],
+    processSteps: [
+      {
+        title: "Site Visit & Scope Development",
+        description:
+          "We walk the site, review plans or specifications, and develop a detailed scope of work and timeline.",
+      },
+      {
+        title: "Bid & Contract Execution",
+        description:
+          "A detailed bid is prepared and, upon acceptance, a contract is executed covering scope, schedule, and terms.",
+      },
+      {
+        title: "Permit Applications",
+        description:
+          "We handle all required City of McKinney commercial building permits and coordinate with the development review process.",
+      },
+      {
+        title: "Phased Pour Scheduling & Mobilization",
+        description:
+          "Work is scheduled in phases to minimize impact on active businesses, with early morning or weekend pours as needed.",
+      },
+      {
+        title: "Inspection Coordination & Final Walkthrough",
+        description:
+          "All required inspections are coordinated, and a final walkthrough with documentation confirms the completed scope.",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "Can you schedule commercial work outside normal business hours?",
+        answer:
+          "Yes. We regularly schedule early morning, evening, and weekend pours to minimize disruption to active commercial properties and their tenants.",
+      },
+      {
+        question: "Is there a minimum project size?",
+        answer:
+          "We handle commercial projects of all sizes, from a single dumpster pad to full parking lot pours. There's no minimum — we'll evaluate the scope and provide a bid.",
+      },
+      {
+        question:
+          "Do you manage permitting with the City of McKinney for commercial projects?",
+        answer:
+          "Yes. We handle the full commercial permit process including plan submission, development review coordination, and inspection scheduling.",
+      },
+      {
+        question:
+          "What's a realistic timeline for a commercial parking lot or slab?",
+        answer:
+          "Small commercial pours (dumpster pads, sidewalk sections) can be completed in 1–2 days. Full parking lots typically require 1–3 weeks of active work depending on size, phasing requirements, and weather conditions.",
+      },
+    ],
+    relatedServices: ["foundations-slabs", "block-walls"],
+  },
+];
+
+export function getServiceBySlug(slug: string): ServiceData | undefined {
+  return services.find((s) => s.slug === slug);
+}
+
+export const serviceNavItems = services.map((s) => ({
+  name: s.name,
+  href: `/services/${s.slug}`,
+}));

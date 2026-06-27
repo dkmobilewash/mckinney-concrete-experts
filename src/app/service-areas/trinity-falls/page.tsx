@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+import { getLocationBySlug } from "@/data/locations";
+import AreaPageContent from "@/components/sections/AreaPageContent";
+
+const location = getLocationBySlug("trinity-falls")!;
+
+export const metadata: Metadata = {
+  title: location.metaTitle,
+  description: location.metaDescription,
+  openGraph: { images: ["/og-image.jpg"] },
+  alternates: {
+    canonical:
+      "https://mckinneyconcreteexperts.com/service-areas/trinity-falls",
+  },
+};
+
+export default function TrinityFallsPage() {
+  return <AreaPageContent location={location} />;
+}
