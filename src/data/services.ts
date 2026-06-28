@@ -7,7 +7,7 @@ export const services: ServiceData[] = [
     metaTitle: "Concrete Driveways in McKinney TX | McKinney Concrete Experts",
     metaDescription:
       "Expert concrete driveway installation and replacement in McKinney, TX. Broom finish, stamped, and exposed aggregate. Rebar-reinforced for North Texas clay soil. Free estimates.",
-    heroImage: "https://picsum.photos/seed/driveways/1600/900",
+    heroImage: "/mckinney-photos-named/concrete-driveway-mckinney-tx.jpg",
     heroSubtitle:
       "Durable, code-compliant concrete driveways built for McKinney's climate and soil conditions.",
     intro: [
@@ -81,7 +81,7 @@ export const services: ServiceData[] = [
     metaTitle: "Concrete Patios in McKinney TX | McKinney Concrete Experts",
     metaDescription:
       "Custom concrete patios in McKinney, TX. Stamped, stained, and broom-finish options. Built for Texas outdoor living. Free estimates.",
-    heroImage: "https://picsum.photos/seed/patios/1600/900",
+    heroImage: "/mckinney-photos-named/concrete-patio-mckinney-tx.jpg",
     heroSubtitle:
       "Custom patios built for McKinney's outdoor living season — stamped, stained, and built to last.",
     intro: [
@@ -156,7 +156,7 @@ export const services: ServiceData[] = [
     metaTitle: "Concrete Pool Decks in McKinney TX | McKinney Concrete Experts",
     metaDescription:
       "Pool deck installation and resurfacing in McKinney, TX. Cool deck coatings, slip-resistant finishes, and UV-resistant sealers. Free estimates.",
-    heroImage: "https://picsum.photos/seed/pooldecks/1600/900",
+    heroImage: "/mckinney-photos-named/concrete-pool-deck-mckinney-tx.jpg",
     heroSubtitle:
       "Slip-resistant, cool-to-the-touch pool decks designed for McKinney's long pool season.",
     intro: [
@@ -233,7 +233,7 @@ export const services: ServiceData[] = [
       "Concrete Block Walls in McKinney TX | McKinney Concrete Experts",
     metaDescription:
       "Retaining walls, privacy walls, and decorative block walls in McKinney, TX. Engineered footings, permit coordination, and quality construction. Free estimates.",
-    heroImage: "https://picsum.photos/seed/blockwalls/1600/900",
+    heroImage: "/mckinney-photos-named/concrete-block-wall-mckinney-tx.jpg",
     heroSubtitle:
       "Retaining walls, privacy walls, and decorative block construction — engineered and permitted.",
     intro: [
@@ -309,7 +309,7 @@ export const services: ServiceData[] = [
       "Concrete Foundations & Slabs in McKinney TX | McKinney Concrete Experts",
     metaDescription:
       "Engineered concrete foundations and slabs in McKinney, TX. Post-tension systems for Collin County clay soil. Garage floors, workshops, and more. Free estimates.",
-    heroImage: "https://picsum.photos/seed/foundations/1600/900",
+    heroImage: "/mckinney-photos-named/concrete-foundation-slab-mckinney-tx.jpg",
     heroSubtitle:
       "Engineered foundations and standalone slabs built for Collin County's demanding soil conditions.",
     intro: [
@@ -386,7 +386,7 @@ export const services: ServiceData[] = [
       "Commercial Concrete in McKinney TX | McKinney Concrete Experts",
     metaDescription:
       "Commercial concrete services in McKinney, TX. Parking lots, ADA sidewalks, warehouse slabs, and flatwork. Bonded and insured. Free estimates.",
-    heroImage: "https://picsum.photos/seed/commercial/1600/900",
+    heroImage: "/mckinney-photos-named/commercial-concrete-mckinney-tx.jpg",
     heroSubtitle:
       "Parking lots, ADA-compliant flatwork, and commercial slabs — bonded, insured, and built to code.",
     intro: [

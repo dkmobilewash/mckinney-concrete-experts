@@ -21,7 +21,7 @@ export default function GalleryPage() {
         subtitle="Browse completed projects — driveways, patios, pool decks, block walls, foundations, and commercial work."
         ctaText="Get a Free Estimate"
         ctaHref="/contact"
-        imageSrc="https://picsum.photos/seed/gallery/1600/900"
+        imageSrc="/mckinney-photos-named/concrete-project-gallery-mckinney.jpg"
         imageAlt="Concrete project gallery"
         height="short"
       />

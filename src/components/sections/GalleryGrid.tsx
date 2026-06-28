@@ -16,20 +16,20 @@ const categories = [
 ];
 
 const galleryImages: GalleryImage[] = [
-  { src: "https://picsum.photos/seed/101/800/600", alt: "Stamped concrete driveway in Stonebridge Ranch", category: "Driveways" },
-  { src: "https://picsum.photos/seed/102/800/600", alt: "Broom-finish patio with stamped border", category: "Patios" },
-  { src: "https://picsum.photos/seed/103/800/600", alt: "Cool deck pool surround in Craig Ranch", category: "Pool Decks" },
-  { src: "https://picsum.photos/seed/104/800/600", alt: "CMU retaining wall with decorative caps", category: "Block Walls" },
-  { src: "https://picsum.photos/seed/105/800/600", alt: "Residential garage slab pour", category: "Foundations" },
-  { src: "https://picsum.photos/seed/106/800/600", alt: "Commercial parking lot pour", category: "Commercial" },
-  { src: "https://picsum.photos/seed/107/800/600", alt: "Exposed aggregate driveway in Trinity Falls", category: "Driveways" },
-  { src: "https://picsum.photos/seed/108/800/600", alt: "Multi-level stamped patio", category: "Patios" },
-  { src: "https://picsum.photos/seed/109/800/600", alt: "Pool deck resurfacing project", category: "Pool Decks" },
-  { src: "https://picsum.photos/seed/110/800/600", alt: "Privacy block wall with stucco finish", category: "Block Walls" },
-  { src: "https://picsum.photos/seed/111/800/600", alt: "Workshop slab with thickened edge", category: "Foundations" },
-  { src: "https://picsum.photos/seed/112/800/600", alt: "ADA-compliant commercial sidewalk", category: "Commercial" },
-  { src: "https://picsum.photos/seed/113/800/600", alt: "Colored concrete driveway and walkway", category: "Driveways" },
-  { src: "https://picsum.photos/seed/114/800/600", alt: "Acid-stained backyard patio", category: "Patios" },
+  { src: "/mckinney-photos-named/stamped-concrete-driveway-stonebridge-ranch.jpg", alt: "Stamped concrete driveway in Stonebridge Ranch", category: "Driveways" },
+  { src: "/mckinney-photos-named/stamped-patio-craig-ranch.jpg", alt: "Stamped patio with slate pattern in Craig Ranch", category: "Patios" },
+  { src: "/mckinney-photos-named/cool-deck-pool-surround-mckinney.jpg", alt: "Cool deck pool surround in McKinney", category: "Pool Decks" },
+  { src: "/mckinney-photos-named/cmu-retaining-wall-mckinney-tx.jpg", alt: "CMU retaining wall with decorative caps", category: "Block Walls" },
+  { src: "/mckinney-photos-named/garage-slab-pour-mckinney-tx.jpg", alt: "Residential garage slab pour in McKinney", category: "Foundations" },
+  { src: "/mckinney-photos-named/commercial-parking-lot-concrete-mckinney.jpg", alt: "Commercial parking lot concrete pour", category: "Commercial" },
+  { src: "/mckinney-photos-named/exposed-aggregate-driveway-trinity-falls.jpg", alt: "Exposed aggregate driveway in Trinity Falls", category: "Driveways" },
+  { src: "/mckinney-photos-named/multi-level-concrete-patio-mckinney.jpg", alt: "Multi-level stamped concrete patio", category: "Patios" },
+  { src: "/mckinney-photos-named/pool-deck-resurfacing-mckinney-tx.jpg", alt: "Pool deck resurfacing project in McKinney", category: "Pool Decks" },
+  { src: "/mckinney-photos-named/privacy-block-wall-mckinney.jpg", alt: "Privacy block wall with stucco finish", category: "Block Walls" },
+  { src: "/mckinney-photos-named/workshop-slab-mckinney-tx.jpg", alt: "Workshop slab with thickened edge", category: "Foundations" },
+  { src: "/mckinney-photos-named/ada-sidewalk-commercial-mckinney-tx.jpg", alt: "ADA-compliant commercial sidewalk in McKinney", category: "Commercial" },
+  { src: "/mckinney-photos-named/colored-concrete-driveway-mckinney.jpg", alt: "Colored concrete driveway and walkway", category: "Driveways" },
+  { src: "/mckinney-photos-named/acid-stained-patio-mckinney-tx.jpg", alt: "Acid-stained backyard patio in McKinney", category: "Patios" },
 ];
 
 export default function GalleryGrid() {

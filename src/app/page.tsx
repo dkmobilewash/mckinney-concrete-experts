@@ -71,7 +71,7 @@ export default function HomePage() {
         ctaHref="/contact"
         secondaryCtaText="See Our Work"
         secondaryCtaHref="/gallery"
-        imageSrc="https://picsum.photos/seed/mckinney/1600/900"
+        imageSrc="/mckinney-photos-named/mckinney-concrete-contractors-hero.jpg"
         imageAlt="Professional concrete work in McKinney, Texas"
         height="full"
       />

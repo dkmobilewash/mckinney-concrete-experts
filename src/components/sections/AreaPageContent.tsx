@@ -9,6 +9,17 @@ type AreaPageContentProps = {
   location: LocationData;
 };
 
+const areaImages: Record<string, string> = {
+  "stonebridge-ranch": "/mckinney-photos-named/concrete-contractor-stonebridge-ranch-mckinney.jpg",
+  "craig-ranch": "/mckinney-photos-named/concrete-contractor-craig-ranch-mckinney.jpg",
+  "trinity-falls": "/mckinney-photos-named/concrete-contractor-trinity-falls-mckinney.jpg",
+  "tucker-hill": "/mckinney-photos-named/concrete-contractor-tucker-hill-mckinney.jpg",
+  "allen": "/mckinney-photos-named/concrete-contractor-allen-tx.jpg",
+  "fairview": "/mckinney-photos-named/concrete-contractor-fairview-tx.jpg",
+  "celina": "/mckinney-photos-named/concrete-contractor-celina-tx.jpg",
+  "anna": "/mckinney-photos-named/concrete-contractor-anna-tx.jpg",
+};
+
 const serviceLinks: Record<string, string> = {
   Driveways: "/services/driveways",
   Patios: "/services/patios",
@@ -65,7 +76,7 @@ export default function AreaPageContent({ location }: AreaPageContentProps) {
         ctaHref="/contact"
         secondaryCtaText="Call (214) 427-8053"
         secondaryCtaHref="tel:+12144278053"
-        imageSrc={`https://picsum.photos/seed/${location.slug}/1600/900`}
+        imageSrc={areaImages[location.slug] || `/mckinney-photos-named/concrete-contractor-${location.slug}.jpg`}
         imageAlt={`Concrete services in ${location.name}`}
         height="short"
       />

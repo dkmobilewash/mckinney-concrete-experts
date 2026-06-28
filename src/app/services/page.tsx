@@ -25,7 +25,7 @@ export default function ServicesPage() {
         subtitle="From residential driveways to commercial flatwork — quality concrete work across McKinney and Collin County."
         ctaText="Get a Free Estimate"
         ctaHref="/contact"
-        imageSrc="https://picsum.photos/seed/services/1600/900"
+        imageSrc="/mckinney-photos-named/concrete-services-mckinney-tx.jpg"
         imageAlt="Concrete services in McKinney, Texas"
         height="medium"
       />

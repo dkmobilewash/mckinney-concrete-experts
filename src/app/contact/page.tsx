@@ -65,7 +65,7 @@ export default function ContactPage() {
         subtitle="Tell us about your project and we'll get back to you within 1 business day."
         ctaText="Call (214) 427-8053"
         ctaHref="tel:+12144278053"
-        imageSrc="https://picsum.photos/seed/contact/1600/900"
+        imageSrc="/mckinney-photos-named/free-concrete-estimate-mckinney-tx.jpg"
         imageAlt="Contact McKinney Concrete Experts"
         height="short"
       />
