@@ -1,0 +1,169 @@
+McKinney Concrete Experts — Image File List
+=============================================
+34 images total. File names are SEO-optimized for search ranking.
+Use descriptive, keyword-rich names with hyphens (not underscores).
+
+
+HERO IMAGES (1600x900px, JPG or WebP)
+--------------------------------------
+Location: /public/images/
+
+1.  mckinney-concrete-contractors-hero.jpg
+    → Home page hero background
+    → Ideal shot: wide-angle of a crew finishing a large residential pour in McKinney
+
+2.  concrete-services-mckinney-tx.jpg
+    → Services overview page hero
+    → Ideal shot: variety of concrete work or a crew at work on a job site
+
+3.  concrete-driveway-mckinney-tx.jpg
+    → Driveways service page hero + services grid card thumbnail
+    → Ideal shot: completed broom-finish or stamped driveway, full view from street
+
+4.  concrete-patio-mckinney-tx.jpg
+    → Patios service page hero + services grid card thumbnail
+    → Ideal shot: stamped or stained patio with outdoor furniture, backyard setting
+
+5.  concrete-pool-deck-mckinney-tx.jpg
+    → Pool Decks service page hero + services grid card thumbnail
+    → Ideal shot: cool deck finish around a residential pool, bright daylight
+
+6.  concrete-block-wall-mckinney-tx.jpg
+    → Block Walls service page hero + services grid card thumbnail
+    → Ideal shot: finished retaining wall or privacy wall with decorative caps
+
+7.  concrete-foundation-slab-mckinney-tx.jpg
+    → Foundations & Slabs service page hero + services grid card thumbnail
+    → Ideal shot: fresh slab pour or post-tension foundation, rebar visible
+
+8.  commercial-concrete-mckinney-tx.jpg
+    → Commercial Concrete service page hero + services grid card thumbnail
+    → Ideal shot: commercial parking lot pour or ADA sidewalk, larger crew
+
+9.  concrete-project-gallery-mckinney.jpg
+    → Gallery page hero
+    → Ideal shot: collage-style or wide shot showing range of completed work
+
+10. free-concrete-estimate-mckinney-tx.jpg
+    → Contact page hero
+    → Ideal shot: contractor meeting with homeowner, clipboard or handshake
+
+11. concrete-contractor-stonebridge-ranch-mckinney.jpg
+    → Stonebridge Ranch service area page hero
+    → Ideal shot: residential concrete work in an established neighborhood setting
+
+12. concrete-contractor-craig-ranch-mckinney.jpg
+    → Craig Ranch service area page hero
+    → Ideal shot: driveway or patio in a newer master-planned community
+
+13. concrete-contractor-trinity-falls-mckinney.jpg
+    → Trinity Falls service area page hero
+    → Ideal shot: outdoor living space or new construction flatwork
+
+14. concrete-contractor-tucker-hill-mckinney.jpg
+    → Tucker Hill service area page hero
+    → Ideal shot: craftsman-style home with finished driveway or walkway
+
+15. concrete-contractor-allen-tx.jpg
+    → Allen service area page hero
+    → Ideal shot: residential driveway replacement or patio in established neighborhood
+
+16. concrete-contractor-fairview-tx.jpg
+    → Fairview service area page hero
+    → Ideal shot: larger property with decorative concrete or stamped patio
+
+17. concrete-contractor-celina-tx.jpg
+    → Celina service area page hero
+    → Ideal shot: new construction driveway or patio pour
+
+18. concrete-contractor-anna-tx.jpg
+    → Anna service area page hero
+    → Ideal shot: new home driveway or garage slab in a developing neighborhood
+
+
+GALLERY IMAGES (800x600px, JPG or WebP)
+----------------------------------------
+Location: /public/images/gallery/
+
+19. stamped-concrete-driveway-stonebridge-ranch.jpg
+    → Gallery: Driveways category
+    → Stamped concrete driveway in an established community
+
+20. exposed-aggregate-driveway-trinity-falls.jpg
+    → Gallery: Driveways category
+    → Exposed aggregate driveway on a newer home
+
+21. colored-concrete-driveway-mckinney.jpg
+    → Gallery: Driveways category
+    → Colored or stained concrete driveway with walkway
+
+22. stamped-patio-craig-ranch.jpg
+    → Gallery: Patios category
+    → Stamped patio with slate or stone pattern
+
+23. multi-level-concrete-patio-mckinney.jpg
+    → Gallery: Patios category
+    → Multi-level patio with step-down or raised edge
+
+24. acid-stained-patio-mckinney-tx.jpg
+    → Gallery: Patios category
+    → Acid-stained or colored backyard patio
+
+25. cool-deck-pool-surround-mckinney.jpg
+    → Gallery: Pool Decks category
+    → Cool deck coating around a residential pool
+
+26. pool-deck-resurfacing-mckinney-tx.jpg
+    → Gallery: Pool Decks category
+    → Before/after or finished pool deck resurfacing
+
+27. cmu-retaining-wall-mckinney-tx.jpg
+    → Gallery: Block Walls category
+    → CMU retaining wall with decorative caps
+
+28. privacy-block-wall-mckinney.jpg
+    → Gallery: Block Walls category
+    → Privacy wall with stucco or split-face finish
+
+29. garage-slab-pour-mckinney-tx.jpg
+    → Gallery: Foundations category
+    → Residential garage or workshop slab, freshly poured
+
+30. workshop-slab-mckinney-tx.jpg
+    → Gallery: Foundations category
+    → Standalone slab with thickened edge for outbuilding
+
+31. commercial-parking-lot-concrete-mckinney.jpg
+    → Gallery: Commercial category
+    → Commercial parking lot pour or finished surface
+
+32. ada-sidewalk-commercial-mckinney-tx.jpg
+    → Gallery: Commercial category
+    → ADA-compliant sidewalk or ramp at a commercial property
+
+
+OTHER ASSETS
+------------
+Location: /public/
+
+33. og-image.jpg (1200x630px)
+    → Social sharing preview image (Facebook, Twitter/X, LinkedIn)
+    → Ideal: logo over a concrete project photo, or branded graphic
+    → File name: og-image.jpg (keep as-is, standard convention)
+
+34. favicon.ico (32x32px and 16x16px)
+    → Browser tab icon
+    → Ideal: "MCE" monogram or simple concrete/masonry icon in amber
+    → File name: favicon.ico (keep as-is, required convention)
+
+
+NOTES
+-----
+- All file names use hyphens, lowercase, and include "mckinney" or "mckinney-tx"
+  for local SEO keyword relevance in image search results.
+- JPG is fine for photos. WebP offers better compression if your workflow supports it.
+- Hero images: aim for under 300KB each after compression (use TinyPNG or Squoosh).
+- Gallery images: aim for under 150KB each after compression.
+- Every image on the site already has a descriptive alt tag in the code.
+- The 6 service hero images (#3–#8) are reused as card thumbnails on the
+  home page and services overview, so choose strong, representative shots.
