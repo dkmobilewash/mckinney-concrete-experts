@@ -63,3 +63,17 @@ has not been deployed to that domain yet.
 ## Contact / business details
 - Phone shown on live WordPress site: (214) 833-9489
 - Metadata base URL: https://mckinneyconcreteexperts.com
+
+## SEO overhaul additions (seo-overhaul branch)
+- **Canonical host:** www. Non-www 308-redirects via `next.config.ts`. Redirect map in `src/lib/redirects.ts` (use `resolvePath`).
+- **Business profile:** `src/data/business.ts` — single source for NAP, hours, geo, license (empty = hidden), socials (empty = hidden). `localBusinessSchema()` injected sitewide in `layout.tsx`.
+- **Service pages:** `ServiceData` extended with `overviewExtra`, `scopeItems`, `specs`, `pricingFactors`. Rendered by `ServicePageContent` (adds Service + FAQPage JSON-LD and a "Where We Provide" city grid).
+- **Service × City combos:** route `src/app/services/<service>/[city]/page.tsx` (dynamicParams=false, 8 cities each = 48 pages). Content in `src/data/serviceCityContent.ts` (18 hand-written high-intent combos + `serviceBlurbs` for templated fallback). Rendered by `ServiceCityContent`.
+- **Service-areas index:** `src/app/service-areas/page.tsx`. City pages link down to combos.
+- **Additional areas:** `src/data/additionalAreas.ts`, shown on homepage.
+- **Blog:** `src/data/blog.ts` (frontmatter) + `src/app/blog/` (index + 3 posts) + `BlogPostLayout` (BlogPosting schema). Article styles in `globals.css` (`.article`).
+- **Homepage:** FAQ section + FAQPage schema (`src/data/homeFaqs.ts`) and "How It Works" section.
+- **Placeholder guards:** testimonials/gallery hide entries whose text starts with "[".
+- **Phone:** (214) 833-9489 sitewide.
+- **Build note:** `npm run build` needs Google Fonts network access (fetched by next/font at build). Works on Vercel; a sandbox without that access fails only on the font fetch.
+- **TODO (not done):** dedicated About page (with conditional license display); consider adding services competitors rank for (concrete repair/resurfacing, sidewalks/walkways, sealing).
