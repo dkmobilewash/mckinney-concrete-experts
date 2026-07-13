@@ -18,8 +18,8 @@ export default function CTABanner() {
           Collin County.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="tel:+12144278053" variant="secondary" className="bg-primary border-primary text-white hover:bg-primary/80 hover:text-white">
-            Call (214) 427-8053
+          <Button href="tel:+12148339489" variant="secondary" className="bg-primary border-primary text-white hover:bg-primary/80 hover:text-white">
+            Call (214) 833-9489
           </Button>
           <Button href="/contact" variant="outline-white">
             Request a Quote

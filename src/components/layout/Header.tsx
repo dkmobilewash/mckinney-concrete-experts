@@ -111,11 +111,11 @@ export default function Header() {
 
           <div className="flex items-center gap-4">
             <a
-              href="tel:+12144278053"
+              href="tel:+12148339489"
               className="hidden md:flex items-center gap-2 bg-accent text-white px-5 py-2 rounded font-display font-bold text-sm hover:bg-accent-dark transition-colors"
             >
               <Phone className="h-4 w-4" />
-              (214) 427-8053
+              (214) 833-9489
             </a>
             <MobileMenu />
           </div>

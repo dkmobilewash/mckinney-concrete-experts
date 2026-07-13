@@ -74,8 +74,8 @@ export default function AreaPageContent({ location }: AreaPageContentProps) {
         subtitle={location.heroSubtitle}
         ctaText="Get a Free Estimate"
         ctaHref="/contact"
-        secondaryCtaText="Call (214) 427-8053"
-        secondaryCtaHref="tel:+12144278053"
+        secondaryCtaText="Call (214) 833-9489"
+        secondaryCtaHref="tel:+12148339489"
         imageSrc={areaImages[location.slug] || `/mckinney-photos-named/concrete-contractor-${location.slug}.jpg`}
         imageAlt={`Concrete services in ${location.name}`}
         height="short"

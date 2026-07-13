@@ -115,8 +115,8 @@ export default function ContactForm({ defaultArea }: ContactFormProps) {
       {status === "error" && (
         <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-sm text-red-700">
           Something went wrong — please call us at{" "}
-          <a href="tel:+12144278053" className="font-bold underline">
-            (214) 427-8053
+          <a href="tel:+12148339489" className="font-bold underline">
+            (214) 833-9489
           </a>
           .
         </div>

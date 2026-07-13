@@ -15,6 +15,10 @@ export type ServiceData = {
     question: string;
     answer: string;
   }[];
+  overviewExtra?: string[];
+  scopeItems?: string[];
+  specs?: { label: string; value: string }[];
+  pricingFactors?: string[];
   relatedServices: string[];
 };
 

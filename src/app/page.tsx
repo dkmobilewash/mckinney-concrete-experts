@@ -12,7 +12,7 @@ import { locations } from "@/data/locations";
 export const metadata: Metadata = {
   title: "McKinney Concrete Contractors | McKinney Concrete Experts",
   description:
-    "Trusted concrete contractors in McKinney, TX: driveways, patios, pool decks & foundations. Serving Collin County. Call (214) 427-8053 for a free estimate.",
+    "Trusted concrete contractors in McKinney, TX: driveways, patios, pool decks & foundations. Serving Collin County. Call (214) 833-9489 for a free estimate.",
   openGraph: {
     images: ["/og-image.jpg"],
   },
@@ -33,7 +33,7 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "McKinney Concrete Experts",
-    telephone: "+12144278053",
+    telephone: "+12148339489",
     address: {
       "@type": "PostalAddress",
       addressLocality: "McKinney",

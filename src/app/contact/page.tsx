@@ -6,7 +6,7 @@ import ContactForm from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Contact McKinney Concrete Experts | Free Estimates",
   description:
-    "Get a free concrete estimate in McKinney, TX. Call (214) 427-8053 or fill out our form. We serve McKinney, Allen, Fairview, Celina, Anna, and surrounding areas.",
+    "Get a free concrete estimate in McKinney, TX. Call (214) 833-9489 or fill out our form. We serve McKinney, Allen, Fairview, Celina, Anna, and surrounding areas.",
   openGraph: { images: ["/og-image.jpg"] },
   alternates: {
     canonical: "https://www.mckinneyconcreteexperts.com/contact",
@@ -29,7 +29,7 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "McKinney Concrete Experts",
-    telephone: "+12144278053",
+    telephone: "+12148339489",
     address: {
       "@type": "PostalAddress",
       addressLocality: "McKinney",
@@ -63,8 +63,8 @@ export default function ContactPage() {
       <HeroSection
         title="Get Your Free Estimate"
         subtitle="Tell us about your project and we'll get back to you within 1 business day."
-        ctaText="Call (214) 427-8053"
-        ctaHref="tel:+12144278053"
+        ctaText="Call (214) 833-9489"
+        ctaHref="tel:+12148339489"
         imageSrc="/mckinney-photos-named/free-concrete-estimate-mckinney-tx.jpg"
         imageAlt="Contact McKinney Concrete Experts"
         height="short"
@@ -84,12 +84,12 @@ export default function ContactPage() {
               <div className="bg-surface border border-border rounded-lg p-6 space-y-6">
                 <div>
                   <a
-                    href="tel:+12144278053"
+                    href="tel:+12148339489"
                     className="flex items-center gap-3 group"
                   >
                     <Phone className="h-6 w-6 text-accent" />
                     <span className="font-display font-bold text-2xl text-primary group-hover:text-accent transition-colors">
-                      (214) 427-8053
+                      (214) 833-9489
                     </span>
                   </a>
                 </div>
