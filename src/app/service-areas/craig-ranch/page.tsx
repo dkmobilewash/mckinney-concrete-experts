@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: { images: ["/og-image.jpg"] },
   alternates: {
     canonical:
-      "https://mckinneyconcreteexperts.com/service-areas/craig-ranch",
+      "https://www.mckinneyconcreteexperts.com/service-areas/craig-ranch",
   },
 };
 

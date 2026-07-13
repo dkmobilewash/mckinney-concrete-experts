@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://mckinneyconcreteexperts.com",
+  siteUrl: "https://www.mckinneyconcreteexperts.com",
   generateRobotsTxt: true,
   changefreq: "monthly",
   priority: 0.7,

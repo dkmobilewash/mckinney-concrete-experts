@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Browse completed concrete projects across McKinney, TX — driveways, patios, pool decks, block walls, foundations, and commercial work. See our craftsmanship.",
   openGraph: { images: ["/og-image.jpg"] },
   alternates: {
-    canonical: "https://mckinneyconcreteexperts.com/gallery",
+    canonical: "https://www.mckinneyconcreteexperts.com/gallery",
   },
 };
 

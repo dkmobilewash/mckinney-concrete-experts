@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Terms of service for the McKinney Concrete Experts website. Read our terms and conditions.",
   alternates: {
-    canonical: "https://mckinneyconcreteexperts.com/terms-of-service",
+    canonical: "https://www.mckinneyconcreteexperts.com/terms-of-service",
   },
 };
 

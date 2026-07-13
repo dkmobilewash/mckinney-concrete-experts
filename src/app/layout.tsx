@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mckinneyconcreteexperts.com"),
+  metadataBase: new URL("https://www.mckinneyconcreteexperts.com"),
   title: "McKinney Concrete Experts | Driveways, Patios & More",
   description:
     "McKinney's trusted concrete contractors. Driveways, patios, pool decks, foundations, and commercial work across McKinney and Collin County. Free estimates.",

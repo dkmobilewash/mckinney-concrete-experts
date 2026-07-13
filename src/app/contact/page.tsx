@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Get a free concrete estimate in McKinney, TX. Call (214) 427-8053 or fill out our form. We serve McKinney, Allen, Fairview, Celina, Anna, and surrounding areas.",
   openGraph: { images: ["/og-image.jpg"] },
   alternates: {
-    canonical: "https://mckinneyconcreteexperts.com/contact",
+    canonical: "https://www.mckinneyconcreteexperts.com/contact",
   },
 };
 

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://mckinneyconcreteexperts.com
+Host: https://www.mckinneyconcreteexperts.com
 
 # Sitemaps
-Sitemap: https://mckinneyconcreteexperts.com/sitemap.xml
+Sitemap: https://www.mckinneyconcreteexperts.com/sitemap.xml

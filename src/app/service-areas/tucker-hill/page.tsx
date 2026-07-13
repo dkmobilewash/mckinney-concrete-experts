@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: { images: ["/og-image.jpg"] },
   alternates: {
     canonical:
-      "https://mckinneyconcreteexperts.com/service-areas/tucker-hill",
+      "https://www.mckinneyconcreteexperts.com/service-areas/tucker-hill",
   },
 };
 

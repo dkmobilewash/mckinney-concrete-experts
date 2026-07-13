@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Privacy policy for McKinney Concrete Experts. Learn how we collect, use, and protect your personal information.",
   alternates: {
-    canonical: "https://mckinneyconcreteexperts.com/privacy-policy",
+    canonical: "https://www.mckinneyconcreteexperts.com/privacy-policy",
   },
 };
 

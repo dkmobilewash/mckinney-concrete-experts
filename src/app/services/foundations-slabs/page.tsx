@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: service.metaDescription,
   openGraph: { images: ["/og-image.jpg"] },
   alternates: {
-    canonical: "https://mckinneyconcreteexperts.com/services/foundations-slabs",
+    canonical: "https://www.mckinneyconcreteexperts.com/services/foundations-slabs",
   },
 };
 

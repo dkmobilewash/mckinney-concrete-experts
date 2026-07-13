@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: location.metaDescription,
   openGraph: { images: ["/og-image.jpg"] },
   alternates: {
-    canonical: "https://mckinneyconcreteexperts.com/service-areas/allen",
+    canonical: "https://www.mckinneyconcreteexperts.com/service-areas/allen",
   },
 };
 

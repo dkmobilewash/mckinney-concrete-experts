@@ -43,19 +43,19 @@ export default function AreaPageContent({ location }: AreaPageContentProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mckinneyconcreteexperts.com",
+        item: "https://www.mckinneyconcreteexperts.com",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Service Areas",
-        item: "https://mckinneyconcreteexperts.com/service-areas",
+        item: "https://www.mckinneyconcreteexperts.com/service-areas",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: location.name,
-        item: `https://mckinneyconcreteexperts.com/service-areas/${location.slug}`,
+        item: `https://www.mckinneyconcreteexperts.com/service-areas/${location.slug}`,
       },
     ],
   };

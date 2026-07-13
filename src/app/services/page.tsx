@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://mckinneyconcreteexperts.com/services",
+    canonical: "https://www.mckinneyconcreteexperts.com/services",
   },
 };
 
