@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ShieldCheck, ClipboardList, Calendar, Star } from "lucide-react";
+import { ShieldCheck, ClipboardList, Calendar, Star, PhoneCall, ClipboardCheck, Hammer, ChevronDown } from "lucide-react";
 import HeroSection from "@/components/sections/HeroSection";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
@@ -9,6 +9,7 @@ import CTABanner from "@/components/sections/CTABanner";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { locations } from "@/data/locations";
 import { additionalAreas } from "@/data/additionalAreas";
+import { homeFaqs } from "@/data/homeFaqs";
 
 export const metadata: Metadata = {
   title: "McKinney Concrete Contractors | McKinney Concrete Experts",
@@ -30,10 +31,24 @@ const trustBadges = [
 ];
 
 export default function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: homeFaqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
 
   return (
     <>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <HeroSection
         title="McKinney's Trusted Concrete Contractors"
         subtitle="Driveways, patios, pool decks, and foundations built for McKinney homeowners who expect it done right — backed by free estimates and honest work."
@@ -108,6 +123,44 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading title="How It Works" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: PhoneCall,
+                title: "Request a Free Estimate",
+                text: "Call (214) 833-9489 or send us your project details. We respond within one business day — no obligation.",
+              },
+              {
+                icon: ClipboardCheck,
+                title: "On-Site Assessment",
+                text: "We visit your property, evaluate soil, drainage, and scope, then provide a clear written quote before any work begins.",
+              },
+              {
+                icon: Hammer,
+                title: "We Pour & Clean Up",
+                text: "Our crew completes the work to spec, seals where needed, and leaves your property clean and ready to enjoy.",
+              },
+            ].map((step, i) => (
+              <div
+                key={i}
+                className="bg-surface border border-border rounded-lg p-8 text-center"
+              >
+                <div className="mx-auto mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-accent text-white">
+                  <step.icon className="h-6 w-6" />
+                </div>
+                <h3 className="font-display font-bold text-lg text-primary mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-mid text-sm leading-relaxed">{step.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-primary py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading title="What Our McKinney Customers Are Saying" light />
@@ -139,6 +192,28 @@ export default function HomePage() {
             {additionalAreas.join(", ")}, and the rest of Collin County and the
             North Texas area.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-surface py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading title="Frequently Asked Questions" />
+          <div className="space-y-3 max-w-3xl mx-auto">
+            {homeFaqs.map((item, i) => (
+              <details
+                key={i}
+                className="bg-white border border-border rounded-lg group"
+              >
+                <summary className="flex items-center justify-between cursor-pointer px-6 py-4 font-display font-bold text-primary text-sm">
+                  {item.question}
+                  <ChevronDown className="h-5 w-5 text-mid shrink-0 transition-transform duration-200 chevron-icon" />
+                </summary>
+                <div className="px-6 pb-4">
+                  <p className="text-mid text-sm leading-relaxed">{item.answer}</p>
+                </div>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

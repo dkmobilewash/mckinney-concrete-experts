@@ -25,40 +25,9 @@ const areasServed = [
 ];
 
 export default function ContactPage() {
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "McKinney Concrete Experts",
-    telephone: "+12148339489",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "McKinney",
-      addressRegion: "TX",
-      postalCode: "75069",
-      addressCountry: "US",
-    },
-    areaServed: [
-      "McKinney",
-      "Stonebridge Ranch",
-      "Craig Ranch",
-      "Trinity Falls",
-      "Tucker Hill",
-      "Allen",
-      "Fairview",
-      "Celina",
-      "Anna",
-    ],
-    priceRange: "$$",
-  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
-        }}
-      />
 
       <HeroSection
         title="Get Your Free Estimate"
