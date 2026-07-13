@@ -10,9 +10,9 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import { locations } from "@/data/locations";
 
 export const metadata: Metadata = {
-  title: "McKinney Concrete Experts | Driveways, Patios & More",
+  title: "McKinney Concrete Contractors | McKinney Concrete Experts",
   description:
-    "McKinney's trusted concrete contractors. Driveways, patios, pool decks, foundations, and commercial work across McKinney and Collin County. Free estimates.",
+    "Trusted concrete contractors in McKinney, TX: driveways, patios, pool decks & foundations. Serving Collin County. Call (214) 427-8053 for a free estimate.",
   openGraph: {
     images: ["/og-image.jpg"],
   },
@@ -65,14 +65,14 @@ export default function HomePage() {
       />
 
       <HeroSection
-        title="McKinney's Concrete Experts"
-        subtitle="Quality flatwork, driveways, patios, and foundations — built for McKinney homeowners who expect it done right."
+        title="McKinney's Trusted Concrete Contractors"
+        subtitle="Driveways, patios, pool decks, and foundations built for McKinney homeowners who expect it done right — backed by free estimates and honest work."
         ctaText="Get a Free Estimate"
         ctaHref="/contact"
         secondaryCtaText="See Our Work"
         secondaryCtaHref="/gallery"
         imageSrc="/mckinney-photos-named/mckinney-concrete-contractors-hero.jpg"
-        imageAlt="Professional concrete work in McKinney, Texas"
+        imageAlt="Concrete contractors installing a driveway in McKinney, Texas"
         height="full"
       />
 
@@ -94,21 +94,53 @@ export default function HomePage() {
 
       <section className="bg-surface py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading title="Our Concrete Services" />
+          <SectionHeading title="Our Concrete Services in McKinney, TX" />
+          <p className="text-center text-mid max-w-3xl mx-auto -mt-6 mb-12 leading-relaxed">
+            From{" "}
+            <Link
+              href="/services/driveways"
+              className="text-accent font-semibold hover:underline"
+            >
+              concrete driveway installation
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="/services/patios"
+              className="text-accent font-semibold hover:underline"
+            >
+              stamped concrete patios
+            </Link>{" "}
+            to{" "}
+            <Link
+              href="/services/foundations-slabs"
+              className="text-accent font-semibold hover:underline"
+            >
+              foundation slabs
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="/services/commercial-concrete"
+              className="text-accent font-semibold hover:underline"
+            >
+              commercial concrete
+            </Link>
+            , our McKinney crews handle residential and commercial flatwork
+            engineered for North Texas clay soil and freeze-thaw swings.
+          </p>
           <ServicesGrid />
         </div>
       </section>
 
       <section className="bg-surface py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading title="Why McKinney Homeowners Choose Us" />
+          <SectionHeading title="Why McKinney Homeowners Choose Our Concrete Company" />
           <WhyChooseUs />
         </div>
       </section>
 
       <section className="bg-primary py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading title="What Our Customers Are Saying" light />
+          <SectionHeading title="What Our McKinney Customers Are Saying" light />
           <TestimonialsSection />
         </div>
       </section>
@@ -116,7 +148,7 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            title="Serving McKinney & the Surrounding Area"
+            title="Concrete Contractors Serving McKinney & Collin County"
             subtitle="McKinney's growth — from Stonebridge Ranch to Trinity Falls, Allen to Celina — demands a contractor who knows the territory."
           />
           <div className="flex flex-wrap gap-3 justify-center">
