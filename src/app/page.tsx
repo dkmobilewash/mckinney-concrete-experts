@@ -30,40 +30,9 @@ const trustBadges = [
 ];
 
 export default function HomePage() {
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "McKinney Concrete Experts",
-    telephone: "+12148339489",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "McKinney",
-      addressRegion: "TX",
-      postalCode: "75069",
-      addressCountry: "US",
-    },
-    areaServed: [
-      "McKinney",
-      "Stonebridge Ranch",
-      "Craig Ranch",
-      "Trinity Falls",
-      "Tucker Hill",
-      "Allen",
-      "Fairview",
-      "Celina",
-      "Anna",
-    ],
-    priceRange: "$$",
-  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
-        }}
-      />
 
       <HeroSection
         title="McKinney's Trusted Concrete Contractors"

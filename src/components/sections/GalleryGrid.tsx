@@ -35,10 +35,15 @@ const galleryImages: GalleryImage[] = [
 export default function GalleryGrid() {
   const [activeFilter, setActiveFilter] = useState("All");
 
+  // Hide any placeholder entries whose alt text is still a template ("[...]").
+  const realImages = galleryImages.filter(
+    (img) => img.alt && !img.alt.trim().startsWith("[")
+  );
+
   const filtered =
     activeFilter === "All"
-      ? galleryImages
-      : galleryImages.filter((img) => img.category === activeFilter);
+      ? realImages
+      : realImages.filter((img) => img.category === activeFilter);
 
   return (
     <div>

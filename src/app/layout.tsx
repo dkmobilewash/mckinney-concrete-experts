@@ -3,6 +3,7 @@ import { Oswald, Inter } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
+import { localBusinessSchema } from "@/data/business";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -40,6 +41,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${oswald.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col font-body text-primary bg-white antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema()),
+          }}
+        />
         <Header />
         <main className="flex-1 pt-20">{children}</main>
         <Footer />

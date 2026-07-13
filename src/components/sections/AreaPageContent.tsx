@@ -145,7 +145,9 @@ export default function AreaPageContent({ location }: AreaPageContentProps) {
         </div>
       </section>
 
-      <section className="bg-primary py-16">
+      {location.testimonial.quote &&
+        !location.testimonial.quote.trim().startsWith("[") && (
+        <section className="bg-primary py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
@@ -167,6 +169,7 @@ export default function AreaPageContent({ location }: AreaPageContentProps) {
           </div>
         </div>
       </section>
+      )}
 
       <section className="bg-white py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">

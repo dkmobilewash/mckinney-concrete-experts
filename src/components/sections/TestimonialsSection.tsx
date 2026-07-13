@@ -1,10 +1,20 @@
 import { Star } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
 
+function isReal(text: string) {
+  return Boolean(text) && !text.trim().startsWith("[");
+}
+
 export default function TestimonialsSection() {
+  const visible = testimonials.filter(
+    (t) => isReal(t.quote) && isReal(t.name)
+  );
+
+  if (visible.length === 0) return null;
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {testimonials.map((testimonial, i) => (
+      {visible.map((testimonial, i) => (
         <div
           key={i}
           className="bg-white/5 border border-white/10 rounded-lg p-6"
