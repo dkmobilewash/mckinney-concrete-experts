@@ -1,10 +1,12 @@
 import Link from "next/link";
-import { CheckCircle, ChevronDown, Phone } from "lucide-react";
+import { CheckCircle, ChevronDown, Phone, MapPin } from "lucide-react";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { ServiceData } from "@/types";
 import { services } from "@/data/services";
+import { locations } from "@/data/locations";
+import { resolvePath } from "@/lib/redirects";
 
 type ServicePageContentProps = {
   service: ServiceData;
@@ -266,6 +268,30 @@ export default function ServicePageContent({
                   </p>
                 </div>
               </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            title={`Where We Provide ${service.name} Service`}
+            centered={false}
+            subtitle={`We install ${service.name.toLowerCase()} across McKinney and Collin County. Choose your area for details specific to your community.`}
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {locations.map((loc) => (
+              <Link
+                key={loc.slug}
+                href={resolvePath(`/services/${service.slug}/${loc.slug}`)}
+                className="flex items-center gap-2 p-3 bg-surface rounded-lg border border-border hover:border-accent hover:shadow-sm transition-all"
+              >
+                <MapPin className="h-4 w-4 text-accent shrink-0" />
+                <span className="font-display font-bold text-primary text-sm">
+                  {service.name} in {loc.name}
+                </span>
+              </Link>
             ))}
           </div>
         </div>
