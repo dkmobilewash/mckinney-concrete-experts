@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import CTABanner from "@/components/sections/CTABanner";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { locations } from "@/data/locations";
+import { additionalAreas } from "@/data/additionalAreas";
 
 export const metadata: Metadata = {
   title: "McKinney Concrete Contractors | McKinney Concrete Experts",
@@ -162,6 +163,13 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+          <p className="mt-8 text-center text-sm text-mid max-w-4xl mx-auto leading-relaxed">
+            <span className="font-bold text-primary">
+              We also serve nearby communities including{" "}
+            </span>
+            {additionalAreas.join(", ")}, and the rest of Collin County and the
+            North Texas area.
+          </p>
         </div>
       </section>
 

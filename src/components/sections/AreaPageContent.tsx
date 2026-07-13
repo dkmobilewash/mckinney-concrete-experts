@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ContactForm from "@/components/forms/ContactForm";
 import { LocationData } from "@/types";
+import { resolvePath } from "@/lib/redirects";
 
 type AreaPageContentProps = {
   location: LocationData;
@@ -20,13 +21,13 @@ const areaImages: Record<string, string> = {
   "anna": "/mckinney-photos-named/concrete-contractor-anna-tx.jpg",
 };
 
-const serviceLinks: Record<string, string> = {
-  Driveways: "/services/driveways",
-  Patios: "/services/patios",
-  "Pool Decks": "/services/pool-decks",
-  "Block Walls": "/services/block-walls",
-  "Foundations & Slabs": "/services/foundations-slabs",
-  "Commercial Concrete": "/services/commercial-concrete",
+const serviceSlugs: Record<string, string> = {
+  Driveways: "driveways",
+  Patios: "patios",
+  "Pool Decks": "pool-decks",
+  "Block Walls": "block-walls",
+  "Foundations & Slabs": "foundations-slabs",
+  "Commercial Concrete": "commercial-concrete",
 };
 
 export default function AreaPageContent({ location }: AreaPageContentProps) {
@@ -97,13 +98,20 @@ export default function AreaPageContent({ location }: AreaPageContentProps) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title={`Concrete Services in ${location.name}`}
+            subtitle={`Explore each service we provide in ${location.name} — tap any option for details specific to your area.`}
             centered={false}
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {location.services.map((service) => (
               <Link
                 key={service}
-                href={serviceLinks[service] || "/services"}
+                href={
+                  serviceSlugs[service]
+                    ? resolvePath(
+                        `/services/${serviceSlugs[service]}/${location.slug}`
+                      )
+                    : "/services"
+                }
                 className="flex items-center gap-3 p-4 bg-white rounded-lg border border-border hover:shadow-md transition-shadow"
               >
                 <CheckCircle className="h-5 w-5 text-accent shrink-0" />

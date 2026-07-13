@@ -1,0 +1,33 @@
+// Additional North Texas / Collin County communities we serve beyond the
+// cities and neighborhoods that have their own dedicated pages. Displayed on
+// the homepage to signal broader geographic coverage.
+export const additionalAreas: string[] = [
+  "Frisco",
+  "Plano",
+  "Prosper",
+  "Melissa",
+  "Princeton",
+  "Wylie",
+  "Sachse",
+  "Murphy",
+  "Lucas",
+  "Parker",
+  "Little Elm",
+  "The Colony",
+  "Richardson",
+  "Garland",
+  "Rockwall",
+  "Lowry Crossing",
+  "New Hope",
+  "St. Paul",
+  "Weston",
+  "Westminster",
+  "Van Alstyne",
+  "Blue Ridge",
+  "Farmersville",
+  "Josephine",
+  "Lavon",
+  "Nevada",
+  "Gunter",
+  "Howe",
+];
