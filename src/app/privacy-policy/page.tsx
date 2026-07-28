@@ -4,6 +4,20 @@ export const metadata: Metadata = {
   title: "Privacy Policy | McKinney Concrete Experts",
   description:
     "Privacy policy for McKinney Concrete Experts. Learn how we collect, use, and protect your personal information.",
+  openGraph: {
+    title: "Privacy Policy | McKinney Concrete Experts",
+    description:
+      "Privacy policy for McKinney Concrete Experts. Learn how we collect, use, and protect your personal information.",
+    url: "https://mckinneyconcreteexperts.com/privacy-policy",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "McKinney Concrete Experts" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | McKinney Concrete Experts",
+    description:
+      "Privacy policy for McKinney Concrete Experts.",
+    images: ["/og-image.jpg"],
+  },
   alternates: {
     canonical: "https://mckinneyconcreteexperts.com/privacy-policy",
   },

@@ -136,6 +136,13 @@ export default function MobileMenu() {
                 Gallery
               </Link>
               <Link
+                href="/blog"
+                onClick={close}
+                className="py-3 text-lg font-display font-bold"
+              >
+                Blog
+              </Link>
+              <Link
                 href="/contact"
                 onClick={close}
                 className="py-3 text-lg font-display font-bold"

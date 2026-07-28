@@ -97,7 +97,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-400">McKinney, TX</span>
+                <span className="text-sm text-gray-400">1575 Heritage Dr, McKinney, TX 75069</span>
               </li>
               <li>
                 <a
@@ -131,7 +131,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-            <p>&copy; 2024 McKinney Concrete Experts. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} McKinney Concrete Experts. All Rights Reserved.</p>
             <div className="flex gap-4">
               <Link
                 href="/privacy-policy"

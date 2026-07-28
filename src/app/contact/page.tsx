@@ -1,13 +1,28 @@
 import type { Metadata } from "next";
 import { Phone, Mail, Clock, MapPin, CheckCircle } from "lucide-react";
 import HeroSection from "@/components/sections/HeroSection";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import ContactForm from "@/components/forms/ContactForm";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "Contact McKinney Concrete Experts | Free Estimates",
   description:
     "Get a free concrete estimate in McKinney, TX. Call (214) 427-8053 or fill out our form. We serve McKinney, Allen, Fairview, Celina, Anna, and surrounding areas.",
-  openGraph: { images: ["/og-image.jpg"] },
+  openGraph: {
+    title: "Contact McKinney Concrete Experts | Free Estimates",
+    description:
+      "Get a free concrete estimate in McKinney, TX. Call (214) 427-8053 or fill out our form. We serve McKinney, Allen, Fairview, Celina, Anna, and surrounding areas.",
+    url: "https://mckinneyconcreteexperts.com/contact",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Contact McKinney Concrete Experts" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact McKinney Concrete Experts | Free Estimates",
+    description:
+      "Get a free concrete estimate in McKinney, TX. Call (214) 427-8053 or fill out our form.",
+    images: ["/og-image.jpg"],
+  },
   alternates: {
     canonical: "https://mckinneyconcreteexperts.com/contact",
   },
@@ -28,14 +43,31 @@ export default function ContactPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "McKinney Concrete Experts",
-    telephone: "+12144278053",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    telephone: siteConfig.phoneE164,
+    email: siteConfig.email,
+    image: `${siteConfig.url}${siteConfig.ogImage}`,
+    logo: `${siteConfig.url}${siteConfig.ogImage}`,
+    priceRange: siteConfig.priceRange,
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "07:00",
+      closes: "18:00",
+    },
     address: {
       "@type": "PostalAddress",
-      addressLocality: "McKinney",
-      addressRegion: "TX",
-      postalCode: "75069",
-      addressCountry: "US",
+      streetAddress: siteConfig.address.street,
+      addressLocality: siteConfig.address.city,
+      addressRegion: siteConfig.address.state,
+      postalCode: siteConfig.address.zip,
+      addressCountry: siteConfig.address.country,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: siteConfig.geo.latitude,
+      longitude: siteConfig.geo.longitude,
     },
     areaServed: [
       "McKinney",
@@ -48,7 +80,26 @@ export default function ContactPage() {
       "Celina",
       "Anna",
     ],
-    priceRange: "$$",
+    ...(siteConfig.sameAs.length > 0 && { sameAs: siteConfig.sameAs }),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteConfig.url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Contact",
+        item: `${siteConfig.url}/contact`,
+      },
+    ],
   };
 
   return (
@@ -59,6 +110,14 @@ export default function ContactPage() {
           __html: JSON.stringify(localBusinessSchema),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
+      <Breadcrumbs items={[{ label: "Contact" }]} />
 
       <HeroSection
         title="Get Your Free Estimate"
@@ -107,13 +166,15 @@ export default function ContactPage() {
                 <div className="flex items-start gap-3">
                   <Clock className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                   <span className="text-mid text-sm">
-                    Mon–Sat 7:00am–6:00pm
+                    Mon&ndash;Sat 7:00am&ndash;6:00pm
                   </span>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-mid text-sm">McKinney, TX</span>
+                  <span className="text-mid text-sm">
+                    1575 Heritage Dr, McKinney, TX 75069
+                  </span>
                 </div>
 
                 <div className="border-t border-border pt-4">

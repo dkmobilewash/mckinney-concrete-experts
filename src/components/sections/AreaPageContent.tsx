@@ -2,8 +2,10 @@ import Link from "next/link";
 import { CheckCircle, Star } from "lucide-react";
 import HeroSection from "@/components/sections/HeroSection";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import ContactForm from "@/components/forms/ContactForm";
 import { LocationData } from "@/types";
+import { siteConfig } from "@/lib/siteConfig";
 
 type AreaPageContentProps = {
   location: LocationData;
@@ -43,19 +45,19 @@ export default function AreaPageContent({ location }: AreaPageContentProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://mckinneyconcreteexperts.com",
+        item: siteConfig.url,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Service Areas",
-        item: "https://mckinneyconcreteexperts.com/service-areas",
+        item: `${siteConfig.url}/service-areas`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: location.name,
-        item: `https://mckinneyconcreteexperts.com/service-areas/${location.slug}`,
+        item: `${siteConfig.url}/service-areas/${location.slug}`,
       },
     ],
   };
@@ -67,6 +69,13 @@ export default function AreaPageContent({ location }: AreaPageContentProps) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
         }}
+      />
+
+      <Breadcrumbs
+        items={[
+          { label: "Service Areas", href: "/services" },
+          { label: location.name },
+        ]}
       />
 
       <HeroSection

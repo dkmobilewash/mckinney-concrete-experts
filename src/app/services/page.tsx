@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import HeroSection from "@/components/sections/HeroSection";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import CTABanner from "@/components/sections/CTABanner";
 import SectionHeading from "@/components/ui/SectionHeading";
 
@@ -10,6 +11,17 @@ export const metadata: Metadata = {
   description:
     "Full-range concrete services in McKinney TX — driveways, patios, pool decks, block walls, foundations, and commercial concrete. Licensed, insured, free estimates.",
   openGraph: {
+    title: "Concrete Services in McKinney TX | McKinney Concrete Experts",
+    description:
+      "Full-range concrete services in McKinney TX — driveways, patios, pool decks, block walls, foundations, and commercial concrete. Licensed, insured, free estimates.",
+    url: "https://mckinneyconcreteexperts.com/services",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Concrete Services in McKinney TX" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Concrete Services in McKinney TX | McKinney Concrete Experts",
+    description:
+      "Full-range concrete services in McKinney TX — driveways, patios, pool decks, block walls, foundations, and commercial concrete.",
     images: ["/og-image.jpg"],
   },
   alternates: {
@@ -20,6 +32,8 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
+      <Breadcrumbs items={[{ label: "Services" }]} />
+
       <HeroSection
         title="Professional Concrete Services in McKinney, TX"
         subtitle="From residential driveways to commercial flatwork — quality concrete work across McKinney and Collin County."

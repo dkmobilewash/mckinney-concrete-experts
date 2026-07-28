@@ -8,12 +8,24 @@ import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import CTABanner from "@/components/sections/CTABanner";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { locations } from "@/data/locations";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   title: "McKinney Concrete Experts | Driveways, Patios & More",
   description:
     "McKinney's trusted concrete contractors. Driveways, patios, pool decks, foundations, and commercial work across McKinney and Collin County. Free estimates.",
   openGraph: {
+    title: "McKinney Concrete Experts | Driveways, Patios & More",
+    description:
+      "McKinney's trusted concrete contractors. Driveways, patios, pool decks, foundations, and commercial work across McKinney and Collin County. Free estimates.",
+    url: "https://mckinneyconcreteexperts.com",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "McKinney Concrete Experts" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "McKinney Concrete Experts | Driveways, Patios & More",
+    description:
+      "McKinney's trusted concrete contractors. Driveways, patios, pool decks, foundations, and commercial work across McKinney and Collin County. Free estimates.",
     images: ["/og-image.jpg"],
   },
   alternates: {
@@ -32,14 +44,31 @@ export default function HomePage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "McKinney Concrete Experts",
-    telephone: "+12144278053",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    telephone: siteConfig.phoneE164,
+    email: siteConfig.email,
+    image: `${siteConfig.url}${siteConfig.ogImage}`,
+    logo: `${siteConfig.url}${siteConfig.ogImage}`,
+    priceRange: siteConfig.priceRange,
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "07:00",
+      closes: "18:00",
+    },
     address: {
       "@type": "PostalAddress",
-      addressLocality: "McKinney",
-      addressRegion: "TX",
-      postalCode: "75069",
-      addressCountry: "US",
+      streetAddress: siteConfig.address.street,
+      addressLocality: siteConfig.address.city,
+      addressRegion: siteConfig.address.state,
+      postalCode: siteConfig.address.zip,
+      addressCountry: siteConfig.address.country,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: siteConfig.geo.latitude,
+      longitude: siteConfig.geo.longitude,
     },
     areaServed: [
       "McKinney",
@@ -52,7 +81,7 @@ export default function HomePage() {
       "Celina",
       "Anna",
     ],
-    priceRange: "$$",
+    ...(siteConfig.sameAs.length > 0 && { sameAs: siteConfig.sameAs }),
   };
 
   return (

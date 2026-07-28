@@ -4,6 +4,20 @@ export const metadata: Metadata = {
   title: "Terms of Service | McKinney Concrete Experts",
   description:
     "Terms of service for the McKinney Concrete Experts website. Read our terms and conditions.",
+  openGraph: {
+    title: "Terms of Service | McKinney Concrete Experts",
+    description:
+      "Terms of service for the McKinney Concrete Experts website. Read our terms and conditions.",
+    url: "https://mckinneyconcreteexperts.com/terms-of-service",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "McKinney Concrete Experts" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | McKinney Concrete Experts",
+    description:
+      "Terms of service for the McKinney Concrete Experts website.",
+    images: ["/og-image.jpg"],
+  },
   alternates: {
     canonical: "https://mckinneyconcreteexperts.com/terms-of-service",
   },

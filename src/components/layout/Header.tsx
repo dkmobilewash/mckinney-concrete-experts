@@ -102,6 +102,12 @@ export default function Header() {
               Gallery
             </Link>
             <Link
+              href="/blog"
+              className="px-4 py-2 text-white font-display text-sm hover:text-accent transition-colors"
+            >
+              Blog
+            </Link>
+            <Link
               href="/contact"
               className="px-4 py-2 text-white font-display text-sm hover:text-accent transition-colors"
             >

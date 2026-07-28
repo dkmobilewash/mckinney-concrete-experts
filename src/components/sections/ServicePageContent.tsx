@@ -3,8 +3,10 @@ import { CheckCircle, ChevronDown, Phone } from "lucide-react";
 import HeroSection from "@/components/sections/HeroSection";
 import CTABanner from "@/components/sections/CTABanner";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { ServiceData } from "@/types";
 import { services } from "@/data/services";
+import { siteConfig } from "@/lib/siteConfig";
 
 type ServicePageContentProps = {
   service: ServiceData;
@@ -17,8 +19,94 @@ export default function ServicePageContent({
     service.relatedServices.includes(s.slug)
   );
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `${service.name} in McKinney, TX`,
+    description: service.metaDescription,
+    provider: {
+      "@type": "LocalBusiness",
+      name: siteConfig.name,
+      telephone: siteConfig.phoneE164,
+      url: siteConfig.url,
+    },
+    areaServed: {
+      "@type": "City",
+      name: "McKinney",
+      containedInPlace: {
+        "@type": "State",
+        name: "Texas",
+      },
+    },
+    url: `${siteConfig.url}/services/${service.slug}`,
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: service.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteConfig.url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: `${siteConfig.url}/services`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: service.name,
+        item: `${siteConfig.url}/services/${service.slug}`,
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+
+      <Breadcrumbs
+        items={[
+          { label: "Services", href: "/services" },
+          { label: service.name },
+        ]}
+      />
+
       <HeroSection
         title={service.name}
         subtitle={service.heroSubtitle}

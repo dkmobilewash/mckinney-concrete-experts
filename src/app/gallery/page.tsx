@@ -1,13 +1,27 @@
 import type { Metadata } from "next";
 import HeroSection from "@/components/sections/HeroSection";
 import GalleryGrid from "@/components/sections/GalleryGrid";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
   title: "Project Gallery | McKinney Concrete Experts",
   description:
     "Browse completed concrete projects across McKinney, TX — driveways, patios, pool decks, block walls, foundations, and commercial work. See our craftsmanship.",
-  openGraph: { images: ["/og-image.jpg"] },
+  openGraph: {
+    title: "Project Gallery | McKinney Concrete Experts",
+    description:
+      "Browse completed concrete projects across McKinney, TX — driveways, patios, pool decks, block walls, foundations, and commercial work.",
+    url: "https://mckinneyconcreteexperts.com/gallery",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "McKinney Concrete Experts Project Gallery" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Project Gallery | McKinney Concrete Experts",
+    description:
+      "Browse completed concrete projects across McKinney, TX — driveways, patios, pool decks, block walls, foundations, and commercial work.",
+    images: ["/og-image.jpg"],
+  },
   alternates: {
     canonical: "https://mckinneyconcreteexperts.com/gallery",
   },
@@ -16,6 +30,8 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   return (
     <>
+      <Breadcrumbs items={[{ label: "Gallery" }]} />
+
       <HeroSection
         title="Our Work Across McKinney"
         subtitle="Browse completed projects — driveways, patios, pool decks, block walls, foundations, and commercial work."
